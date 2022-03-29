@@ -1,0 +1,29 @@
+Fruits Identification system using deep neural networks.
+We are going to classify hundreds of varieties of fruit just by looking at the images.
+
+Link to download dataset.
+
+https://www.dropbox.com/s/fxn3ldztzwxm0rw/FruitsData.zip/
+
+Fruits 360 (90483 images of 131 fruits and vegetables.)
+
+ABOUT THE PROJECT
+
+Dealing with Image datasets.
+Performing Data Processing and Augmentation as and when required.
+Creating and training a Convolutional Neural Network using Tensorflow 2.0.
+
+ARCHITECTURE used
+1. RESNET50
+2. INCEPTION V3
+3. EFFICIENTNET B3
+
+##### TRAINING APPROACH
+
+Training a large pretrained network on large data set with more classes is a very time consuming activity,and there are very high chances that the models may overfit. 
+Now to avoid these issues between our model in two phases. In phase one, we train our whole network for 3 epoch. In this phase, we tune the weight of all the layers of our model. In the next phase, we expect our model to just learn Patterns in the current data.
+Training more than four epochs might result in over learning.
+In the phase two be freeze all the layers of our model and only train the last layer where we do the classification.
+This phase gives more importance to the classification layer, thus making it more accurate.
+
+
